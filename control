@@ -1,0 +1,10 @@
+Package: com.rustybalboa.powertapxi
+Name: PowerTapXI
+Depends: mobilesubstrate, com.midnightchips.ldrun
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Updated Version Of PowerTap For iOS11!
+Maintainer: Rusty_Balboa
+Author: Rusty_Balboa
+Section: Tweaks
+Depiction: https://rustybalboadev.github.io/depictions/?p=com.rustybalboa.powertapxi
