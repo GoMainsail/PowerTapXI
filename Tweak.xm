@@ -27,32 +27,8 @@ static _UIActionSlider* actionSlider;
 
 %new
 -(void)touchedAction {
-    if (Tap == 1) {
-        //change text here
-        actionSlider.trackText = @"slide to respring";
-
-
-    }
-    else if (Tap == 2) {
-        //Change Text again
-        actionSlider.trackText = @"slide to safemode";
-
-    }
-    else if (Tap == 3) {
-        //Change Text Again
-        actionSlider.trackText = @"slide to soft reboot";
-
-    }
-    else if (Tap == 4) {
-        //change text again
-        actionSlider.trackText = @"slide to reboot";
-
-    }
-    else if (Tap == 5) {
-      actionSlider.trackText = @"slide to power off";
-
-    }
-
+    NSArray *titles = @[@"slide to respring", @"slide to safemode", @"slide to soft reboot", @"slide to reboot", @"slide to power off"];
+    actionSlider.trackText = titles[Tap - 1];
     Tap = Tap == 5 ? 1 : Tap + 1;
 }
 
